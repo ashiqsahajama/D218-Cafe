@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="reservations.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.9/jquery.datetimepicker.css" 
+    integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>D218 Cafe/Make Reservationst</title>
+</head>
+<body>
+    <section class="reservations">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html" style="color: white; font-size: 35px;">D218 Cafe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="fa fa-bars" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item" >
+                    <a class="nav-link" href="../index.html"style="color: white;">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html"style="color: white;">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"style="color: white;">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"style="color: white;">CONTACT</a>
+                </li>   
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="main" style="background-color: #F3F3F3;">
+        <div class="container">
+            <div class="row">
+            <div class="details">
+                <div class="card" >
+                    <div class="card-body">
+                    <h4 class="card-title">Make Reservations</h4>
+                    <div class="container">
+                        <form id="form">
+                            <div class="form-row">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Name" style="margin: 15px;" autofocus required>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Email" id="email" style="margin: 15px;" required>
+                            </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                <input type="number" class="form-control" placeholder="Contact No" id="contact" style="margin: 15px;" required>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-group mb-3" style="margin: 15px;">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">No Of Peoples</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" id="picker" class="form-control" style="margin: 15px;" placeholder="Select Date" required>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" id="tpicker" class="form-control" style="margin: 15px;" placeholder="Select Time" required>
+                                </div>
+                            </div>
+                            <div style="text-align: center; margin: 5px;">
+                                <input class="btn btn-secondary" type="submit" style="padding: 8px 20px;" value="Submit">
+                            </div>
+                            <div style="text-align: center; margin: 5px;">
+                                <span id="result"></span>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="text-box">
+                        <h4>Working Hours</h4>
+                        <p>
+                            Mon to Sat: 08:00AM to 10:00PM<br>
+                            Closed on Sundays<br>
+                            Take aways and deliveries are also available
+                        </p>
+                    </div>
+                    <hr class="visible-sm">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="text-box">
+                        <h4>Address</h4>
+                        <p>
+                            Rajiv Gandhi Salai (OMR)<br>
+                            Kalavakkam – 603 110<br>
+                            Tamil Nadu, India
+                        </p>
+                    </div>
+                    <hr class="visible-sm">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="text-box">
+                        <h4>Branches</h4>
+                        <p>
+                            D218 cafe, Bangalore, Karnataka<br>
+                            D218 cafe, Nellore, Andhra Pradesh <br>
+                            D218 cafe, Mumbai, Maharastra<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="color: white;"> 
+            <p>&#169;Copyrights D218 Cafe 2021</p>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.9/jquery.datetimepicker.full.min.js" 
+    integrity="sha512-hDFt+089A+EmzZS6n/urree+gmentY36d9flHQ5ChfiRjEJJKFSsl1HqyEOS5qz7jjbMZ0JU4u/x1qe211534g==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <script src="reservations.js"></script>
+</body>
+</html>
