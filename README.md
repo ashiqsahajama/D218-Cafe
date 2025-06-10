@@ -3,3 +3,8 @@ A simple front end idea for a Cafe. It is a responsive site and is developed usi
 
 The images folder contains all the images used in the code. These are the images of several dishes.
 Tab folder contains codes for the respective tabs.
+
+check it out at:
+https://d218-cafe.vercel.app
+
+
